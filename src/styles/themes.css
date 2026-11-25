@@ -1,0 +1,46 @@
+/* ==========================================================================
+   THEME DEFINITIONS
+   Default: Dark Mode ("Burnt Orange")
+   Alternate: Light Mode ("Crimson & Cream")
+   ========================================================================== */
+
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Core Palette — Burnt Orange */
+  --color-bg: #151412;
+  --color-surface: #24211e;
+  --color-accent: #ff6329;
+  --color-text-primary: #f2ebdd;
+  --color-text-secondary: #938a80;
+
+  /* Derived Editorial Tokens */
+  --color-accent-ink: #151412;
+  --color-surface-elevated: color-mix(in srgb, #24211e 90%, #f2ebdd);
+  --color-border: color-mix(in srgb, #f2ebdd 14%, transparent);
+  --color-border-strong: color-mix(in srgb, #f2ebdd 34%, transparent);
+  --color-accent-soft: color-mix(in srgb, #ff6329 14%, transparent);
+  --color-halftone: color-mix(in srgb, #f2ebdd 9%, transparent);
+  --grain-opacity: 0.05;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+
+  /* Core Palette — Crimson & Cream */
+  --color-bg: #f3ede2;
+  --color-surface: #e8dfd2;
+  --color-accent: #d92525;
+  --color-text-primary: #171717;
+  --color-text-secondary: #655d55;
+
+  /* Derived Editorial Tokens */
+  --color-accent-ink: #f3ede2;
+  --color-surface-elevated: color-mix(in srgb, #e8dfd2 92%, #171717);
+  --color-border: color-mix(in srgb, #171717 14%, transparent);
+  --color-border-strong: color-mix(in srgb, #171717 34%, transparent);
+  --color-accent-soft: color-mix(in srgb, #d92525 12%, transparent);
+  --color-halftone: color-mix(in srgb, #171717 10%, transparent);
+  --grain-opacity: 0.035;
+}

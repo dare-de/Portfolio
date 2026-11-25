@@ -1,0 +1,72 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   Typography, Spacing, Breakpoints, Radii, Elevation & Motion
+   ========================================================================== */
+
+:root {
+  /* Typography Families */
+  --font-display: 'Anton', Impact, 'Arial Narrow', sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Fluid Editorial Type Scale */
+  --text-display-xl: clamp(3.5rem, 10.5vw, 9.5rem);
+  --text-display-lg: clamp(2.5rem, 6.5vw, 5.75rem);
+  --text-display-md: clamp(1.875rem, 4.2vw, 3.5rem);
+
+  --text-heading-lg: clamp(1.5rem, 2.5vw, 2.375rem);
+  --text-heading-md: clamp(1.25rem, 1.75vw, 1.625rem);
+  --text-heading-sm: clamp(1rem, 1.2vw, 1.25rem);
+
+  --text-body-lg: clamp(1.0625rem, 1.15vw, 1.25rem);
+  --text-body-md: 1rem;
+  --text-body-sm: 0.875rem;
+  --text-label: 0.75rem;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Layout Tokens */
+  --container-max: 1440px;
+  --gutter: clamp(1rem, 3.5vw, 3rem);
+  --section-y: clamp(3.5rem, 7vw, 7.5rem);
+  --section-y-tight: clamp(2rem, 4vw, 4rem);
+  --grid-gap: clamp(1rem, 2vw, 1.75rem);
+
+  /* Breakpoint Reference Tokens */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1536px;
+
+  /* Editorial Geometry (Sharp / Minimal Corners) */
+  --radius-none: 0px;
+  --radius-xs: 2px;
+
+  /* Z-Index Layers */
+  --z-base: 1;
+  --z-surface: 10;
+  --z-header: 40;
+  --z-grain: 50;
+  --z-overlay: 60;
+
+  /* Motion Timing & Curves */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 600ms;
+}
